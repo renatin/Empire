@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Missionvisions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Picvision</th>
+      <th>Descvision</th>
+      <th>Picmission</th>
+      <th>Descmission</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @missionvisions.each do |missionvision| %>
+      <tr>
+        <td><%= missionvision.picvision %></td>
+        <td><%= missionvision.descvision %></td>
+        <td><%= missionvision.picmission %></td>
+        <td><%= missionvision.descmission %></td>
+        <td><%= link_to 'Show', missionvision %></td>
+        <td><%= link_to 'Edit', edit_missionvision_path(missionvision) %></td>
+        <td><%= link_to 'Destroy', missionvision, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Missionvision', new_missionvision_path %>

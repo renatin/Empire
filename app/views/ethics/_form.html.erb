@@ -1,0 +1,22 @@
+<%= form_for(ethic) do |f| %>
+  <% if ethic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ethic.errors.count, "error") %> prohibited this ethic from being saved:</h2>
+
+      <ul>
+      <% ethic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

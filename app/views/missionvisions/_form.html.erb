@@ -1,0 +1,37 @@
+<%= form_for(missionvision) do |f| %>
+  <% if missionvision.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(missionvision.errors.count, "error") %> prohibited this missionvision from being saved:</h2>
+
+      <ul>
+      <% missionvision.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :picvision %>
+    <%= f.text_field :picvision %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descvision %>
+    <%= f.text_area :descvision %>
+  </div>
+
+  <div class="field">
+    <%= f.label :picmission %>
+    <%= f.text_field :picmission %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descmission %>
+    <%= f.text_area :descmission %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

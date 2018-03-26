@@ -1,0 +1,19 @@
+ <!-- Contenido del sitio -->
+ <div class="container">   
+	    <div class="page-header">
+	 		 <h1>Código de Ética<small> The Empire</small></h1>
+		</div>
+       <!-- Primera Parte -->
+        <div class="row">
+        	<% @ethics.each do |ethic| %>
+        		<div class="container">
+	        	
+	        		<p><%= ethic.desc %></p>
+	        		
+         		</div>
+         	<% end %>
+        </div>
+        <!-- /.row -->
+        
+   
+</div>

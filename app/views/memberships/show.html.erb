@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @membership.title %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @membership.desc %>
+</p>
+
+<p>
+  <strong>Pic:</strong>
+  <%= @membership.pic %>
+</p>
+
+<%= link_to 'Edit', edit_membership_path(@membership) %> |
+<%= link_to 'Back', memberships_path %>

@@ -1,0 +1,2 @@
+class Missionvision < ApplicationRecord
+end
