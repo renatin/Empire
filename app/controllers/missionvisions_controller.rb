@@ -1,4 +1,5 @@
 class MissionvisionsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_missionvision, only: [:show, :edit, :update, :destroy]
 
   # GET /missionvisions

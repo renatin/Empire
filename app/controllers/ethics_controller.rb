@@ -1,4 +1,5 @@
 class EthicsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_ethic, only: [:show, :edit, :update, :destroy]
 
   # GET /ethics

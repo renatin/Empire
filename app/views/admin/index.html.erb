@@ -1,0 +1,78 @@
+<div class="container">
+
+  <div class="row"> 
+
+    <h1>Administración Sitio</h1>
+
+  </div>
+  <hr>
+  <div class="row">
+   
+    <h2>Acerca de nosotros</h2>
+      
+    <% @abouts.each do |about| %>
+     
+        <h3>Titulo Descripción</h3>
+        <h4><%= about.title %></h4>
+        <h3>Cuerpo descripción</h3>
+        <%= about.desc %>
+        <br>
+        <%= link_to 'Edit', edit_about_path(about) %>
+
+    <% end %>    
+  </div>
+
+   <hr>
+
+  <div class="row">  
+      <h2>Descripción de The Empire en la Pagina de inicio</h2>
+     
+   
+    <% @descriptions.each do |description| %>
+      
+        <%= description.description %>
+        <br>
+        
+        <%= link_to 'Editar', edit_description_path(description) %>
+    
+    <% end %>
+
+  </div>  
+
+   <hr>
+
+  <div class="row">
+    <h2>Misión Visión</h2>
+
+    <% @missionvisions.each do |missionvision| %>
+      
+        <h3>Misión</h3>
+        <%= missionvision.picvision %>
+        
+        <%= missionvision.descvision %>
+        <h3>Visión</h3>
+        <%= missionvision.picmission %>
+        
+        <%= missionvision.descmission %>
+        <br>
+        <%= link_to 'Editar', edit_missionvission_path(missionvission) %>
+    <% end %>
+  </div>
+
+   <hr>
+
+  <div class="row">
+    
+    <h2>Código de Ética</h2>
+       
+          <% @ethics.each do |ethic| %>
+           
+             <%= ethic.desc %>
+             <br>
+             <%= link_to 'Editar', edit_ethic_path(ethic) %>
+             
+          <% end %>
+
+  </div>
+
+</div>
