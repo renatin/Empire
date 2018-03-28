@@ -6,12 +6,12 @@
         <div class="row">
         	<div class="container">
 	        	
-	        	<h2>Visión</h2>
-	        	<div class="col-xs-6 col-md-4">
-	        		<%= image_tag ("Vision.png"), class: "img-responsive2" %>
+	        	<h1 class="titulo1 t1">Visión</h1>
+	        	<div class="col-xs-6 col-md-9">
+	        		<p><%= missionvision.descvision %></p>
 	        	</div>
-	        	<div class="col-xs-12 col-md-8">
-	        		<p><%= missionvission.descvision %></p>
+	        	<div class="col-xs-12 col-md-3">
+              <%= image_tag ("Vision.png"), class: "img-responsive2 " %>
 	        	</div>
            
          	</div>
@@ -25,13 +25,13 @@
 
       		<div class="container">
 	        	
-	        	<h2>Misión</h2>
-	        	<div class="col-xs-12 col-md-8">
-	        		<p><%= missionvission.descmission %></p>
-	        		
-	        	</div>
-	        	<div class="col-xs-6 col-md-4">
+	        	<h1 class="titulo1 t1 derecha">Misión</h1>
+	        	<div class="col-xs-12 col-md-3">
 	        		<%= image_tag ("Mision.png"), class: "img-responsive2" %>
+	        	</div>
+	        	<div class="col-xs-6 col-md-9">
+	        		
+              <p><%= missionvision.descmission %></p>
 	        	</div>
            
          	</div>

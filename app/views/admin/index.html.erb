@@ -30,7 +30,7 @@
    
     <% @descriptions.each do |description| %>
       
-        <%= description.description %>
+        <%= description.desc %>
         <br>
         
         <%= link_to 'Editar', edit_description_path(description) %>
@@ -55,7 +55,7 @@
         
         <%= missionvision.descmission %>
         <br>
-        <%= link_to 'Editar', edit_missionvission_path(missionvission) %>
+        <%= link_to 'Editar', edit_missionvision_path(missionvision) %>
     <% end %>
   </div>
 
