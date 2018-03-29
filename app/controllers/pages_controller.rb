@@ -5,6 +5,7 @@ class PagesController < ApplicationController
 
   def about
     @abouts = About.all
+     @missionvisions = Missionvision.all
   end
 
   def ethic

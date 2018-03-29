@@ -1,12 +1,13 @@
  <!-- Contenido del sitio -->
- <div class="container">   
+ <div class="container-fluid">   
    <% @missionvisions.each do |missionvision| %>
     	<h1>Visión y Misión</h1>
        <!-- Primera Parte -->
         <div class="row">
-        	<div class="container">
-	        	
+        	<div class="container-fluid">
+	        	<div class="col-xs-12 col-md-8">
 	        	<h1 class="titulo1 t1">Visión</h1>
+          </div>
 	        	<div class="col-xs-6 col-md-9">
 	        		<p><%= missionvision.descvision %></p>
 	        	</div>
@@ -23,7 +24,7 @@
         <!-- Segunda Parte -->
       	<div class="row">
 
-      		<div class="container">
+      		<div class="container-fluid">
 	        	
 	        	<h1 class="titulo1 t1 derecha">Misión</h1>
 	        	<div class="col-xs-12 col-md-3">
@@ -44,7 +45,7 @@
       <hr>
 
       
-<div class="container">
+<div class="container-fluid">
   <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="well well-sm">

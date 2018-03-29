@@ -1127,7 +1127,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   animation-name: logo;
   animation-duration: 5s !important;
 }
@@ -6786,7 +6786,7 @@ button.close {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 150px;
+  max-width: 60%;
   height: auto;
   animation-name: logo;
   animation-duration: 5s !important;
@@ -6797,7 +6797,7 @@ button.close {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100px;
+  max-width: 70%;
   height: auto;
   animation-name: logo;
   animation-duration: 5s !important;
@@ -7048,8 +7048,40 @@ button.close {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 98% 98%;
     border-radius: 8px;
+}
+
+.parallax3{
+  background: url('Cursos.jpg') 50% 0 no-repeat fixed;
+    /* Full height */
+    height: 100%; 
+
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+     
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 8px;
+}
+
+.parallax-reportes{
+  background: url('RyB.jpg') 50% 0 no-repeat fixed;
+   /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3%;
+    border-radius: 8px;
+
 }
 
 
@@ -7172,6 +7204,11 @@ body {
     width: 50%;
 
 }
+.center2{
+    margin: auto;
+    width: 80%;
+
+}
 
 .t1 {
   font-size: 70px;
@@ -7187,4 +7224,68 @@ body {
 
 .color-titulo {
   color: #F8F8FF;
+}
+
+.color-member {
+  color: #2e1616;
+}
+.planm {
+  background-color: #d36262;
+  border-radius: 100px;
+  text-align: center;
+
+}
+.plant {
+  background-color: #559be0;
+  border-radius: 100px;
+  text-align: center;
+}
+.plans {
+  background-color: #78d162;
+  border-radius: 100px;
+  text-align: center;
+}
+.plana {
+  background-color: #ae62d1;
+  border-radius: 100px;
+  text-align: center;
+}
+
+
+
+
+
+
+.navbar-custom {
+  background-color:#229922;
+    color:#ffffff;
+    border-radius:0;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+  background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #33aa33;
+}
+     
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#33aa33;
 }
