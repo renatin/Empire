@@ -34,6 +34,6 @@ class PagesController < ApplicationController
   def freeresource
   end
 
-  def prremiunreourse
+  def premiunreourse
   end
 end

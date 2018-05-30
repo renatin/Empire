@@ -10,7 +10,7 @@
 
 
             <div class="col-xs-12 col-md-6">
-				      <br><br>         
+				      <br>       
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					  <!-- Indicadores -->
 					  <ol class="carousel-indicators">
@@ -38,11 +38,11 @@
 					  </div>
 
 					  <!-- Controls -->
-					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					  <a class="left carousel-control2" href="#carousel-example-generic" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 					    <span class="sr-only"></span>
 					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					  <a class="right carousel-control2" href="#carousel-example-generic" role="button" data-slide="next">
 					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					    <span class="sr-only"></span> 
 					  </a>
@@ -58,12 +58,11 @@
         <div class="row">
             <div class="col-xs-12 col-md-6">
                <h1 class="titulo1">The Empire</h1>
-                <br>
-               
+                               
 
                	<% @descriptions.each do |description| %>
 			      
-			       <%= description.desc %>
+			      <h3 class="font-text"> <%= description.desc %></h3>
 			        
 			      
 			    <% end %>
@@ -91,11 +90,11 @@
 	          </a>
 	        </div>
 	        <div class="col-xs-12 col-md-3">
-	          <h3>Sergio Urbuna</h3>
-	          <p>Es un emprendedor y el CEO y fundador de The Empire. A sus tempranos 19
+	          <h3 class="font-titulares">Sergio Urbuna</h3>
+	          <h3 class="font-text">Es un emprendedor y el CEO y fundador de The Empire. A sus tempranos 19
 				años es uno de los Traders con mayor proyección en el mercado. Ha dado asesorías a personas
-				de Perú, Colombia y México. Dando conferencias en este último país durante una semana.</p>
-	          <p>Nacionalidad: Perú</p>
+				de Perú, Colombia y México. Dando conferencias en este último país durante una semana.</h3>
+	          <h3 class="font-text">Nacionalidad: Perú</h3>
 	          
 	        </div>
 	     </div>

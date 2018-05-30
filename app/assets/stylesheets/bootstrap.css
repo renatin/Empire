@@ -262,15 +262,31 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+
+
 }
+
 @font-face {
   font-family: 'Blacksword';
-
   src: url(Blacksword.otf);
+
 }
+@font-face {
+
+  font-family: 'Gabriola';
+  src :url(Gabriola.ttf);
+}
+@font-face {
+  
+  font-family: 'MyriadPro-Regular';
+  src: url(MyriadPro-Regular.otf);
+}
+
+
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -6242,6 +6258,8 @@ button.close {
   border-left-color: #fff;
 }
 .carousel {
+  border-radius: 8px;
+  overflow: hidden;
   position: relative;
 }
 .carousel-inner {
@@ -6321,13 +6339,13 @@ button.close {
 .carousel-inner > .active.right {
   left: 100%;
 }
-.carousel-control {
+.carousel-control2 {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 5%;
-  font-size: 20px;
+  width: 3%;
+  font-size: 2px;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -7197,6 +7215,13 @@ body {
 
 .titulo1 {
   font-family: 'Blacksword', cursive;
+}
+
+.font-text {
+  font-family: 'Gabriola', serif;
+}
+.font-titulares {
+  font-family: 'MyriadPro-Regular', serif;
 }
 
 .center {

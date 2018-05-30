@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
   get 'pages/freeresource'
 
-  get 'pages/prremiunreourse'
+  get 'pages/premiunreourse'
 
   get 'admin/index'
 
